@@ -23,51 +23,51 @@
     </style>
   </defs>
   <rect width="1000" height="330" rx="18" fill="url(#bg)"/>
-  <text class="mono" x="34" y="42" font-size="13" fill="#a78bfa" letter-spacing="3">▶ NOW STREAMING</text>
-  <text class="sans" x="34" y="72" font-size="24" font-weight="900" fill="#fff">SIMRAN: THE SERIES <tspan fill="#f472b6">— Season 01</tspan></text>
-  <text class="mono" x="966" y="42" font-size="12" fill="#64748b" text-anchor="end">rated: 10/10 by recruiters (probably)</text>
+  <text class="mono" x="34" y="42" font-size="13" fill="#a78bfa" letter-spacing="3">~/timeline</text>
+  <text class="sans" x="34" y="72" font-size="24" font-weight="900" fill="#fff">so far</text>
+  <text class="mono" x="966" y="42" font-size="12" fill="#64748b" text-anchor="end">2024 → now</text>
 
   <!-- EP 1 -->
   <g class="card" style="animation-delay:.1s">
     <rect x="34" y="96" width="222" height="210" rx="14" fill="#141127" stroke="#38bdf8" stroke-opacity=".4"/>
     <rect x="34" y="96" width="222" height="96" rx="14" fill="url(#t1)"/><rect x="34" y="96" width="222" height="96" rx="14" fill="url(#dots)"/>
     <text class="icon" x="145" y="160" font-size="40" text-anchor="middle">💻</text>
-    <text class="mono ep" x="50" y="216" fill="#38bdf8">EP.01 · 2024</text>
-    <text class="sans ttl" x="50" y="240">The CoreIP Prologue</text>
-    <text class="sans sub" x="50" y="262">SWE intern. Figma → pixel-perfect,</text>
-    <text class="sans sub" x="50" y="279">5+ pages shipped. origin story.</text>
+    <text class="mono ep" x="50" y="216" fill="#38bdf8">2024</text>
+    <text class="sans ttl" x="50" y="240">CoreIP Technology</text>
+    <text class="sans sub" x="50" y="262">software dev intern.</text>
+    <text class="sans sub" x="50" y="279">frontend, figma → code.</text>
   </g>
   <!-- EP 2 -->
   <g class="card" style="animation-delay:.3s">
     <rect x="270" y="96" width="222" height="210" rx="14" fill="#141127" stroke="#facc15" stroke-opacity=".4"/>
     <rect x="270" y="96" width="222" height="96" rx="14" fill="url(#t2)"/><rect x="270" y="96" width="222" height="96" rx="14" fill="url(#dots)"/>
     <text class="icon" x="381" y="160" font-size="40" text-anchor="middle" style="animation-delay:.5s">🏆</text>
-    <text class="mono ep" x="286" y="216" fill="#facc15">EP.02 · 2025</text>
-    <text class="sans ttl" x="286" y="240">The Hackathon Arc</text>
-    <text class="sans sub" x="286" y="262">Goldman Sachs hackathon.</text>
-    <text class="sans sub" x="286" y="279">9000+ entered. top 21. no notes.</text>
+    <text class="mono ep" x="286" y="216" fill="#facc15">2025</text>
+    <text class="sans ttl" x="286" y="240">GS Hackathon</text>
+    <text class="sans sub" x="286" y="262">goldman sachs. made it to</text>
+    <text class="sans sub" x="286" y="279">the top 21 out of 9000+.</text>
   </g>
   <!-- EP 3 -->
   <g class="card" style="animation-delay:.5s">
     <rect x="506" y="96" width="222" height="210" rx="14" fill="#141127" stroke="#f43f5e" stroke-opacity=".4"/>
     <rect x="506" y="96" width="222" height="96" rx="14" fill="url(#t3)"/><rect x="506" y="96" width="222" height="96" rx="14" fill="url(#dots)"/>
     <text class="icon" x="617" y="160" font-size="40" text-anchor="middle" style="animation-delay:1s">🧠</text>
-    <text class="mono ep" x="522" y="216" fill="#fb7185">EP.03 · MAY–JUL 2026</text>
-    <text class="sans ttl" x="522" y="240">The Adobe Arc 🔥</text>
-    <text class="sans sub" x="522" y="262">on-device SLMs → straight to prod.</text>
-    <text class="sans sub" x="522" y="279">−84% latency · −67% size</text>
-    <text class="sans sub" x="522" y="296" fill="#fda4af">+1 patent. fan-fave arc.</text>
+    <text class="mono ep" x="522" y="216" fill="#fb7185">MAY – JUL 2026</text>
+    <text class="sans ttl" x="522" y="240">Adobe</text>
+    <text class="sans sub" x="522" y="262">on-device SLM training pipeline.</text>
+    <text class="sans sub" x="522" y="279">shipped to prod.</text>
+    
   </g>
   <!-- EP 4 -->
   <g class="card" style="animation-delay:.7s">
     <rect x="742" y="96" width="224" height="210" rx="14" fill="#141127" stroke="#22d3ee" stroke-opacity=".7"/>
     <rect x="742" y="96" width="224" height="96" rx="14" fill="url(#t4)"/><rect x="742" y="96" width="224" height="96" rx="14" fill="url(#dots)"/>
     <text class="icon" x="854" y="160" font-size="40" text-anchor="middle" style="animation-delay:1.5s">👁️</text>
-    <g class="live"><rect x="754" y="106" width="62" height="20" rx="4" fill="#ef4444"/><text class="mono" x="785" y="120" font-size="11" font-weight="800" fill="#fff" text-anchor="middle">● LIVE</text></g>
-    <text class="mono ep" x="758" y="216" fill="#67e8f9">EP.04 · SEP 2026 →</text>
-    <text class="sans ttl" x="758" y="240">C-DOT: Vision Awakens</text>
-    <text class="sans sub" x="758" y="262">real-time CV on live feeds.</text>
-    <text class="sans sub" x="758" y="279">anomaly? detected. airing now.</text>
+    <g class="live"><rect x="754" y="106" width="62" height="20" rx="4" fill="#16a34a"/><text class="mono" x="785" y="120" font-size="11" font-weight="800" fill="#fff" text-anchor="middle">● NOW</text></g>
+    <text class="mono ep" x="758" y="216" fill="#67e8f9">SEP 2026 → NOW</text>
+    <text class="sans ttl" x="758" y="240">C-DOT</text>
+    <text class="sans sub" x="758" y="262">computer vision on</text>
+    <text class="sans sub" x="758" y="279">live camera feeds.</text>
     <rect x="758" y="290" width="192" height="4" rx="2" fill="#fff" fill-opacity=".1"/>
     <rect class="prog" x="758" y="290" width="192" height="4" rx="2" fill="#22d3ee"/>
   </g>
