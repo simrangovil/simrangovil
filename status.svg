@@ -1,40 +1,110 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="400" viewBox="0 0 1000 400">
   <defs>
     <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0d0b1a"/>
-      <stop offset="100%" stop-color="#170b26"/>
+      <stop offset="0%" stop-color="#0b1026"/>
+      <stop offset="100%" stop-color="#1a0b2e"/>
     </linearGradient>
+    <linearGradient id="fillA" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#22d3ee"/><stop offset="100%" stop-color="#a78bfa"/></linearGradient>
+    <linearGradient id="fillB" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#f472b6"/></linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0"/><stop offset="50%" stop-color="#fff" stop-opacity=".55"/><stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#fff" fill-opacity=".03"/></pattern>
     <style>
       .sans { font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif; }
       .mono { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
-      .row { opacity: 0; animation: row .6s ease-out forwards; }
-      @keyframes row { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
-      .k { fill: #64748b; font-size: 13px; }
-      .v { fill: #e2e8f0; font-size: 16px; }
-      .big { font-size: 34px; font-weight: 300; }
-      .cap { fill: #94a3b8; font-size: 12.5px; }
-      .cursor { animation: c 1s steps(1) infinite; }
-      @keyframes c { 50% { opacity: 0; } }
+      .open { transform-origin: 500px 200px; animation: open .7s cubic-bezier(.2,.9,.2,1) both; }
+      @keyframes open { from { transform: scaleY(.02); opacity: 0; } 60% { opacity: 1; } to { transform: scaleY(1); opacity: 1; } }
+      .row { opacity: 0; animation: row .5s ease-out forwards; }
+      @keyframes row { from { opacity: 0; transform: translateX(-12px); } to { opacity: 1; transform: translateX(0); } }
+      .fill { transform-box: fill-box; transform-origin: left; transform: scaleX(0); animation: fill 1.4s cubic-bezier(.2,.8,.2,1) forwards; }
+      @keyframes fill { to { transform: scaleX(1); } }
+      .shine { animation: shine 2.8s ease-in-out infinite; }
+      @keyframes shine { 0% { transform: translateX(-80px); } 60%,100% { transform: translateX(420px); } }
+      .corner { animation: blink 1.6s ease-in-out infinite; }
+      @keyframes blink { 0%,100% { opacity: .4; } 50% { opacity: 1; } }
+      .pop { opacity: 0; transform-box: fill-box; transform-origin: center; animation: pop .45s cubic-bezier(.3,1.6,.5,1) forwards; }
+      @keyframes pop { from { opacity: 0; transform: scale(.4); } to { opacity: 1; transform: scale(1); } }
+      .k { fill: #94a3b8; font-size: 12px; letter-spacing: 2px; }
+      .v { fill: #f8fafc; font-size: 16px; font-weight: 700; }
+      .lbl { fill: #e2e8f0; font-size: 12.5px; letter-spacing: 1.5px; font-weight: 700; }
+      .num { font-size: 13px; font-weight: 700; }
     </style>
   </defs>
 
-  <rect x="1" y="1" width="998" height="298" rx="16" fill="url(#panel)" stroke="#a78bfa" stroke-opacity=".25"/>
-  <circle cx="28" cy="26" r="5" fill="#ff5f57" fill-opacity=".8"/><circle cx="46" cy="26" r="5" fill="#febc2e" fill-opacity=".8"/><circle cx="64" cy="26" r="5" fill="#28c840" fill-opacity=".8"/>
-  <text class="mono" x="500" y="31" text-anchor="middle" font-size="12" fill="#64748b">~/whoami</text>
-  <line x1="1" y1="48" x2="999" y2="48" stroke="#a78bfa" stroke-opacity=".15"/>
-
-  <g class="mono">
-    <g class="row" style="animation-delay:.2s"><text class="k" x="44" y="96">now</text><text class="v sans" x="150" y="96">AI/ML intern @ C-DOT — computer vision on live camera feeds</text></g>
-    <g class="row" style="animation-delay:.45s"><text class="k" x="44" y="136">before</text><text class="v sans" x="150" y="136">SWE intern @ Adobe — on-device small language models</text></g>
-    <g class="row" style="animation-delay:.7s"><text class="k" x="44" y="176">studying</text><text class="v sans" x="150" y="176">B.Tech CSE · Banasthali</text></g>
-    <g class="row" style="animation-delay:.95s"><text class="k" x="44" y="216">into</text><text class="v sans" x="150" y="216">small fast models, backend, things that just work</text></g>
-    <g class="row" style="animation-delay:1.2s"><text class="k" x="44" y="256">status</text><text class="v sans" x="150" y="256" fill="#f0abfc">probably debugging something<tspan class="cursor">_</tspan></text></g>
+  <g class="open">
+    <rect x="1" y="1" width="998" height="398" rx="14" fill="url(#panel)" stroke="#67e8f9" stroke-opacity=".55" stroke-width="1.5"/>
+    <rect x="1" y="1" width="998" height="398" rx="14" fill="url(#scan)"/>
+    <!-- corners -->
+    <g class="corner" stroke="#67e8f9" stroke-width="3" fill="none">
+      <path d="M12 40V12H40"/><path d="M960 12H988V40"/><path d="M12 360V388H40"/><path d="M960 388H988V360"/>
+    </g>
+    <!-- title -->
+    <rect x="350" y="20" width="300" height="34" rx="6" fill="#67e8f9" fill-opacity=".08" stroke="#67e8f9" stroke-opacity=".5"/>
+    <text class="mono" x="500" y="43" text-anchor="middle" font-size="15" font-weight="700" fill="#a5f3fc" letter-spacing="4">◆ STATUS WINDOW ◆</text>
+    <line x1="40" y1="74" x2="960" y2="74" stroke="#67e8f9" stroke-opacity=".25"/>
+    <line x1="430" y1="94" x2="430" y2="370" stroke="#67e8f9" stroke-opacity=".2"/>
   </g>
 
-  <line x1="720" y1="76" x2="720" y2="266" stroke="#a78bfa" stroke-opacity=".15"/>
-  <g class="sans">
-    <g class="row" style="animation-delay:1.5s"><text class="big" x="760" y="112" fill="#f0abfc">84%</text><text class="cap" x="760" y="132">lower latency, adobe slm</text></g>
-    <g class="row" style="animation-delay:1.7s"><text class="big" x="760" y="182" fill="#c4b5fd">67%</text><text class="cap" x="760" y="202">smaller model, same quality</text></g>
-    <g class="row" style="animation-delay:1.9s"><text class="big" x="760" y="252" fill="#67e8f9">1</text><text class="cap" x="760" y="272">patent along the way</text></g>
+  <!-- LEFT: identity -->
+  <g class="mono">
+    <g class="row" style="animation-delay:.6s"><text class="k" x="50" y="110">NAME</text><text class="v sans" x="150" y="111">Simran Govil</text></g>
+    <g class="row" style="animation-delay:.75s"><text class="k" x="50" y="148">CLASS</text><text class="v sans" x="150" y="149">ML Sorceress <tspan fill="#f472b6">×</tspan> Full-Stack Rogue</text></g>
+    <g class="row" style="animation-delay:.9s"><text class="k" x="50" y="186">GUILD</text><text class="v sans" x="150" y="187">Banasthali · B.Tech CSE</text></g>
+    <g class="row" style="animation-delay:1.05s"><text class="k" x="50" y="224">INT</text><text class="v sans" x="150" y="225">CGPA 8.69 <tspan fill="#94a3b8" font-weight="400" font-size="13">(big brain, verified)</tspan></text></g>
+    <g class="row" style="animation-delay:1.2s"><text class="k" x="50" y="262">TITLES</text><text class="v sans" x="150" y="263" fill="#fde68a">Patent Holder · Adobe Alumna</text></g>
+    <g class="row" style="animation-delay:1.35s"><text class="k" x="50" y="300">QUEST</text><text class="v sans" x="150" y="301" fill="#67e8f9">teaching cameras to see @ C-DOT</text></g>
+
+    <!-- skill chips -->
+    <g font-size="12" font-weight="700">
+      <g class="pop" style="animation-delay:1.6s"><rect x="50" y="326" width="58" height="26" rx="13" fill="#a78bfa" fill-opacity=".18" stroke="#a78bfa"/><text x="79" y="343" text-anchor="middle" fill="#ddd6fe">LoRA</text></g>
+      <g class="pop" style="animation-delay:1.7s"><rect x="116" y="326" width="50" height="26" rx="13" fill="#f472b6" fill-opacity=".18" stroke="#f472b6"/><text x="141" y="343" text-anchor="middle" fill="#fbcfe8">QAT</text></g>
+      <g class="pop" style="animation-delay:1.8s"><rect x="174" y="326" width="50" height="26" rx="13" fill="#22d3ee" fill-opacity=".18" stroke="#22d3ee"/><text x="199" y="343" text-anchor="middle" fill="#a5f3fc">DPO</text></g>
+      <g class="pop" style="animation-delay:1.9s"><rect x="232" y="326" width="76" height="26" rx="13" fill="#4ade80" fill-opacity=".15" stroke="#4ade80"/><text x="270" y="343" text-anchor="middle" fill="#bbf7d0">VISION</text></g>
+      <g class="pop" style="animation-delay:2.0s"><rect x="316" y="326" width="64" height="26" rx="13" fill="#fde047" fill-opacity=".15" stroke="#fde047"/><text x="348" y="343" text-anchor="middle" fill="#fef08a">MERN</text></g>
+    </g>
+  </g>
+
+  <!-- RIGHT: stat bars -->
+  <g class="mono">
+    <!-- 1 -->
+    <g class="row" style="animation-delay:.8s">
+      <text class="lbl" x="465" y="110">⚡ INFERENCE SPEED</text><text class="num" x="955" y="110" text-anchor="end" fill="#67e8f9">+84% BUFF</text>
+      <rect x="465" y="120" width="490" height="14" rx="7" fill="#ffffff" fill-opacity=".07"/>
+      <rect class="fill" x="465" y="120" width="412" height="14" rx="7" fill="url(#fillA)" style="animation-delay:1s"/>
+    </g>
+    <!-- 2 -->
+    <g class="row" style="animation-delay:.95s">
+      <text class="lbl" x="465" y="162">🗜️ MODEL SHRINK RAY</text><text class="num" x="955" y="162" text-anchor="end" fill="#c4b5fd">−67% SIZE</text>
+      <rect x="465" y="172" width="490" height="14" rx="7" fill="#ffffff" fill-opacity=".07"/>
+      <rect class="fill" x="465" y="172" width="328" height="14" rx="7" fill="url(#fillB)" style="animation-delay:1.15s"/>
+    </g>
+    <!-- 3 -->
+    <g class="row" style="animation-delay:1.1s">
+      <text class="lbl" x="465" y="214">⚔️ DSA MOBS DEFEATED</text><text class="num" x="955" y="214" text-anchor="end" fill="#f9a8d4">500+</text>
+      <rect x="465" y="224" width="490" height="14" rx="7" fill="#ffffff" fill-opacity=".07"/>
+      <rect class="fill" x="465" y="224" width="450" height="14" rx="7" fill="url(#fillA)" style="animation-delay:1.3s"/>
+    </g>
+    <!-- 4 -->
+    <g class="row" style="animation-delay:1.25s">
+      <text class="lbl" x="465" y="266">🏆 HACKATHON RANK</text><text class="num" x="955" y="266" text-anchor="end" fill="#fde68a">TOP 21 / 9000+</text>
+      <rect x="465" y="276" width="490" height="14" rx="7" fill="#ffffff" fill-opacity=".07"/>
+      <rect class="fill" x="465" y="276" width="486" height="14" rx="7" fill="url(#fillB)" style="animation-delay:1.45s"/>
+    </g>
+    <!-- 5 -->
+    <g class="row" style="animation-delay:1.4s">
+      <text class="lbl" x="465" y="318">👑 PARTY LEADER</text><text class="num" x="955" y="318" text-anchor="end" fill="#86efac">75+ CREW · 20+ EVENTS</text>
+      <rect x="465" y="328" width="490" height="14" rx="7" fill="#ffffff" fill-opacity=".07"/>
+      <rect class="fill" x="465" y="328" width="392" height="14" rx="7" fill="url(#fillA)" style="animation-delay:1.6s"/>
+    </g>
+    <!-- shine sweeping over bars -->
+    <g class="shine" opacity=".7">
+      <rect x="465" y="120" width="60" height="14" fill="url(#shine)"/>
+      <rect x="465" y="172" width="60" height="14" fill="url(#shine)"/>
+      <rect x="465" y="224" width="60" height="14" fill="url(#shine)"/>
+      <rect x="465" y="276" width="60" height="14" fill="url(#shine)"/>
+      <rect x="465" y="328" width="60" height="14" fill="url(#shine)"/>
+    </g>
+    <text class="row" x="955" y="372" text-anchor="end" font-size="11" fill="#64748b" style="animation-delay:2s">[ stats verified by: actual prod deployments ]</text>
   </g>
 </svg>
