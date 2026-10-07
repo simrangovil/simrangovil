@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://linkedin.com/in/simran-govil"><img src="https://img.shields.io/badge/LinkedIn-1a1526?style=flat-square&logo=linkedin&logoColor=c4b5fd" alt="LinkedIn"/></a>
+  <a href="https://www.linkedin.com/in/simran-govil-288325286"><img src="https://img.shields.io/badge/LinkedIn-1a1526?style=flat-square&logo=linkedin&logoColor=c4b5fd" alt="LinkedIn"/></a>
   <a href="https://leetcode.com/u/simranzz"><img src="https://img.shields.io/badge/LeetCode-1a1526?style=flat-square&logo=leetcode&logoColor=f0abfc" alt="LeetCode"/></a>
   <a href="mailto:simrangovil4@gmail.com"><img src="https://img.shields.io/badge/Email-1a1526?style=flat-square&logo=gmail&logoColor=67e8f9" alt="Email"/></a>
 </p>
@@ -71,10 +71,6 @@ interned at Adobe (making language models small enough to run on-device) and C-D
 </p>
 
 <br/>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=simrangovil&bg_color=0D0A1A&color=C4B5FD&line=F0ABFC&point=67E8F9&area=true&area_color=A78BFA&hide_border=true&custom_title=activity" alt="activity graph" width="100%"/>
-</p>
 
 <p align="center">
   <img src="./footer.svg" alt="that's about it" width="100%"/>
