@@ -155,7 +155,7 @@
   <!-- ░░ LEFT: TEXT ░░ -->
   <g class="rise r1">
     <circle class="dot" cx="62" cy="88" r="5" fill="#4ade80"/>
-    <text class="mono" x="76" y="93" font-size="14" fill="#a5b4fc" letter-spacing="1.5">ONLINE  //  player_01  //  lvl: final_boss</text>
+    <text class="mono" x="76" y="93" font-size="14" fill="#a5b4fc" letter-spacing="1.5">online  ·  simrangovil</text>
   </g>
 
   <g class="rise r2" font-weight="900" font-size="86" letter-spacing="-2">
@@ -170,17 +170,17 @@
   </g>
 
   <g class="rise r4">
-    <text class="mono" x="58" y="296" font-size="16" fill="#e2e8f0">&gt; ai/ml engineer · full-stack · certified overachiever<tspan class="cursor" fill="#f472b6">_</tspan></text>
-    <text class="sans" x="58" y="326" font-size="17" font-style="italic" fill="#f0abfc">lowkey nerd. highkey dangerous with a GPU. 👓⚡</text>
+    <text class="mono" x="58" y="296" font-size="16" fill="#e2e8f0">&gt; ai/ml · backend · building stuff<tspan class="cursor" fill="#f472b6">_</tspan></text>
+    <text class="sans" x="58" y="326" font-size="17" font-style="italic" fill="#f0abfc">mostly just making things i'd want to use.</text>
   </g>
 
   <g class="rise r5 mono" font-size="13" fill="#f5f3ff">
-    <rect x="58" y="342" width="138" height="30" rx="8" fill="#ffffff" fill-opacity=".06" stroke="#f472b6" stroke-opacity=".6"/>
+    <rect x="58" y="342" width="122" height="30" rx="8" fill="#ffffff" fill-opacity=".06" stroke="#f472b6" stroke-opacity=".6"/>
     <text x="72" y="362">🧠 ex-Adobe</text>
-    <rect x="206" y="342" width="160" height="30" rx="8" fill="#ffffff" fill-opacity=".06" stroke="#22d3ee" stroke-opacity=".6"/>
-    <text x="220" y="362">🎥 C-DOT rn</text>
-    <rect x="376" y="342" width="168" height="30" rx="8" fill="#ffffff" fill-opacity=".06" stroke="#c084fc" stroke-opacity=".6"/>
-    <text x="390" y="362">🏆 GS top 21/9k</text>
+    <rect x="190" y="342" width="100" height="30" rx="8" fill="#ffffff" fill-opacity=".06" stroke="#22d3ee" stroke-opacity=".6"/>
+    <text x="204" y="362">🎥 C-DOT</text>
+    <rect x="300" y="342" width="150" height="30" rx="8" fill="#ffffff" fill-opacity=".06" stroke="#c084fc" stroke-opacity=".6"/>
+    <text x="314" y="362">🏆 GS hackathon</text>
   </g>
 
   <!-- ░░ FLOATING HOLO PANELS ░░ -->
@@ -203,9 +203,9 @@
   <g class="float2">
     <path d="M846 64 h128 a10 10 0 0 1 10 10 v24 a10 10 0 0 1 -10 10 h-104 l-14 14 l2 -14 h-12 a10 10 0 0 1 -10 -10 v-24 a10 10 0 0 1 10 -10z" fill="#fdf4ff"/>
     <g class="sans" font-size="12.5" font-weight="700" fill="#3b0764">
-      <text class="q" x="914" y="91" text-anchor="middle">shipping models rn 🚀</text>
-      <text class="q q2" x="914" y="91" text-anchor="middle">it compiles. we ball.</text>
-      <text class="q q3" x="914" y="91" text-anchor="middle">ask me abt LoRA 👀</text>
+      <text class="q" x="914" y="91" text-anchor="middle">brb, training a model</text>
+      <text class="q q2" x="914" y="91" text-anchor="middle">works on my machine</text>
+      <text class="q q3" x="914" y="91" text-anchor="middle">☕ + vs code</text>
     </g>
   </g>
 
