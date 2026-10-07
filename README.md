@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/hero.svg" alt="Simran Govil — anime-style animated banner" width="100%"/>
+  <img src="./hero.svg" alt="Simran Govil — anime-style animated banner" width="100%"/>
 </p>
 
 <p align="center">
@@ -24,7 +24,7 @@
 > i don't do `hello world`. i do `hello prod`. 🚀
 
 <p align="center">
-  <img src="./assets/status.svg" alt="Status window — stats and skills" width="100%"/>
+  <img src=".status.svg" alt="Status window — stats and skills" width="100%"/>
 </p>
 
 <br/>
@@ -32,7 +32,7 @@
 ## 📺 the lore
 
 <p align="center">
-  <img src="./assets/episodes.svg" alt="Season 01 — CoreIP, Goldman Sachs Hackathon, Adobe, C-DOT" width="100%"/>
+  <img src=".episodes.svg" alt="Season 01 — CoreIP, Goldman Sachs Hackathon, Adobe, C-DOT" width="100%"/>
 </p>
 
 <details>
@@ -190,5 +190,5 @@ const simran = {
 </details>
 
 <p align="center">
-  <img src="./assets/footer.svg" alt="to be continued" width="100%"/>
+  <img src=".footer.svg" alt="to be continued" width="100%"/>
 </p>
