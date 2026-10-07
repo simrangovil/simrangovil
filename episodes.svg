@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="330" viewBox="0 0 1000 330">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0a0818"/><stop offset="100%" stop-color="#1c0a2b"/></linearGradient>
+    <linearGradient id="t1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0ea5e9"/><stop offset="100%" stop-color="#312e81"/></linearGradient>
+    <linearGradient id="t2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#facc15"/><stop offset="100%" stop-color="#9a3412"/></linearGradient>
+    <linearGradient id="t3" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#f43f5e"/><stop offset="100%" stop-color="#7c3aed"/></linearGradient>
+    <linearGradient id="t4" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#22d3ee"/><stop offset="100%" stop-color="#c026d3"/></linearGradient>
+    <pattern id="dots" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#fff" fill-opacity=".18"/></pattern>
+    <style>
+      .sans { font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif; }
+      .mono { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+      .card { opacity: 0; animation: in .7s cubic-bezier(.2,.9,.2,1) forwards; }
+      @keyframes in { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+      .icon { animation: bob 3s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      @keyframes bob { 0%,100% { transform: translateY(0) rotate(-4deg); } 50% { transform: translateY(-6px) rotate(4deg); } }
+      .live { animation: live 1s steps(1) infinite; }
+      @keyframes live { 50% { opacity: .25; } }
+      .prog { transform-box: fill-box; transform-origin: left; animation: prog 6s linear infinite; }
+      @keyframes prog { from { transform: scaleX(.05); } to { transform: scaleX(1); } }
+      .ttl { fill: #f8fafc; font-size: 16px; font-weight: 800; }
+      .sub { fill: #cbd5e1; font-size: 12px; }
+      .ep { font-size: 11px; font-weight: 700; letter-spacing: 2px; }
+    </style>
+  </defs>
+  <rect width="1000" height="330" rx="18" fill="url(#bg)"/>
+  <text class="mono" x="34" y="42" font-size="13" fill="#a78bfa" letter-spacing="3">▶ NOW STREAMING</text>
+  <text class="sans" x="34" y="72" font-size="24" font-weight="900" fill="#fff">SIMRAN: THE SERIES <tspan fill="#f472b6">— Season 01</tspan></text>
+  <text class="mono" x="966" y="42" font-size="12" fill="#64748b" text-anchor="end">rated: 10/10 by recruiters (probably)</text>
+
+  <!-- EP 1 -->
+  <g class="card" style="animation-delay:.1s">
+    <rect x="34" y="96" width="222" height="210" rx="14" fill="#141127" stroke="#38bdf8" stroke-opacity=".4"/>
+    <rect x="34" y="96" width="222" height="96" rx="14" fill="url(#t1)"/><rect x="34" y="96" width="222" height="96" rx="14" fill="url(#dots)"/>
+    <text class="icon" x="145" y="160" font-size="40" text-anchor="middle">💻</text>
+    <text class="mono ep" x="50" y="216" fill="#38bdf8">EP.01 · 2024</text>
+    <text class="sans ttl" x="50" y="240">The CoreIP Prologue</text>
+    <text class="sans sub" x="50" y="262">SWE intern. Figma → pixel-perfect,</text>
+    <text class="sans sub" x="50" y="279">5+ pages shipped. origin story.</text>
+  </g>
+  <!-- EP 2 -->
+  <g class="card" style="animation-delay:.3s">
+    <rect x="270" y="96" width="222" height="210" rx="14" fill="#141127" stroke="#facc15" stroke-opacity=".4"/>
+    <rect x="270" y="96" width="222" height="96" rx="14" fill="url(#t2)"/><rect x="270" y="96" width="222" height="96" rx="14" fill="url(#dots)"/>
+    <text class="icon" x="381" y="160" font-size="40" text-anchor="middle" style="animation-delay:.5s">🏆</text>
+    <text class="mono ep" x="286" y="216" fill="#facc15">EP.02 · 2025</text>
+    <text class="sans ttl" x="286" y="240">The Hackathon Arc</text>
+    <text class="sans sub" x="286" y="262">Goldman Sachs hackathon.</text>
+    <text class="sans sub" x="286" y="279">9000+ entered. top 21. no notes.</text>
+  </g>
+  <!-- EP 3 -->
+  <g class="card" style="animation-delay:.5s">
+    <rect x="506" y="96" width="222" height="210" rx="14" fill="#141127" stroke="#f43f5e" stroke-opacity=".4"/>
+    <rect x="506" y="96" width="222" height="96" rx="14" fill="url(#t3)"/><rect x="506" y="96" width="222" height="96" rx="14" fill="url(#dots)"/>
+    <text class="icon" x="617" y="160" font-size="40" text-anchor="middle" style="animation-delay:1s">🧠</text>
+    <text class="mono ep" x="522" y="216" fill="#fb7185">EP.03 · MAY–JUL 2026</text>
+    <text class="sans ttl" x="522" y="240">The Adobe Arc 🔥</text>
+    <text class="sans sub" x="522" y="262">on-device SLMs → straight to prod.</text>
+    <text class="sans sub" x="522" y="279">−84% latency · −67% size</text>
+    <text class="sans sub" x="522" y="296" fill="#fda4af">+1 patent. fan-fave arc.</text>
+  </g>
+  <!-- EP 4 -->
+  <g class="card" style="animation-delay:.7s">
+    <rect x="742" y="96" width="224" height="210" rx="14" fill="#141127" stroke="#22d3ee" stroke-opacity=".7"/>
+    <rect x="742" y="96" width="224" height="96" rx="14" fill="url(#t4)"/><rect x="742" y="96" width="224" height="96" rx="14" fill="url(#dots)"/>
+    <text class="icon" x="854" y="160" font-size="40" text-anchor="middle" style="animation-delay:1.5s">👁️</text>
+    <g class="live"><rect x="754" y="106" width="62" height="20" rx="4" fill="#ef4444"/><text class="mono" x="785" y="120" font-size="11" font-weight="800" fill="#fff" text-anchor="middle">● LIVE</text></g>
+    <text class="mono ep" x="758" y="216" fill="#67e8f9">EP.04 · SEP 2026 →</text>
+    <text class="sans ttl" x="758" y="240">C-DOT: Vision Awakens</text>
+    <text class="sans sub" x="758" y="262">real-time CV on live feeds.</text>
+    <text class="sans sub" x="758" y="279">anomaly? detected. airing now.</text>
+    <rect x="758" y="290" width="192" height="4" rx="2" fill="#fff" fill-opacity=".1"/>
+    <rect class="prog" x="758" y="290" width="192" height="4" rx="2" fill="#22d3ee"/>
+  </g>
+</svg>
