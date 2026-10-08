@@ -23,6 +23,6 @@
     <path class="sp" d="M120 128 l2 6 6 2 -6 2 -2 6 -2 -6 -6 -2 6 -2z" style="animation-delay:1.2s"/>
   </g>
 
-  <text class="sans" x="500" y="78" text-anchor="middle" font-size="22" font-weight="600" fill="#e2e8f0">that's about it.</text>
-  <text class="mono" x="500" y="110" text-anchor="middle" font-size="13" fill="#a5b4fc">thanks for stopping by ✦ <tspan class="blink" fill="#f0abfc">_</tspan></text>
+  <text class="sans" x="500" y="62" text-anchor="middle" font-size="20" font-weight="500" fill="#a5b4fc">that's about it.</text>
+  <text class="sans" x="500" y="108" text-anchor="middle" font-size="34" font-weight="800" fill="#f5f3ff">thanks for stopping by <tspan fill="#f0abfc">✦</tspan></text>
 </svg>
